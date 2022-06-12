@@ -1,0 +1,188 @@
+
+Interval Heaps
+
+How do you want to proceed?
+
+1. Pre-stored static list of elements
+
+2. User Interactive Console
+
+
+Enter your choice(1|2)
+2
+
+Enter no. of elements to be inserted
+9
+
+Enter elements
+
+Enter element 1
+56
+
+Enter element 2
+90056
+
+Enter element 3
+-562
+
+Enter element 4
+0
+
+Enter element 5
+9
+
+Enter element 6
+557
+
+Enter element 7
+4
+
+Enter element 8
+-659
+
+Enter element 9
+0
+
+
+List of elements entered
+
+56 90056 -562 0 9 557 4 -659 0
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+Creating Heap
+
+Processing element - 56
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 56,   XXX  )
+
+Processing element - 90056
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 56,  90056 )
+
+Processing element - -562
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( -562,  90056 )
+( 56,   XXX  )
+
+Processing element - 0
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( -562,  90056 )
+( 0,  56 )
+
+Processing element - 9
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( -562,  90056 )
+( 0,  56 )      ( 9,   XXX  )
+
+Processing element - 557
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( -562,  90056 )
+( 0,  56 )      ( 9,  557 )
+
+Processing element - 4
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( -562,  90056 )
+( 0,  56 )      ( 9,  557 )
+( 4,   XXX  )
+
+Processing element - -659
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( -659,  90056 )
+( -562,  56 )      ( 9,  557 )
+( 0,  4 )
+
+Processing element - 0
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+								( -659,  90056 )
+	( -562,  56 )      									N1( 9,  557 )
+N2( 0,  4 )      N3( 0,   56  )				New
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Enter no. of times removeMin is to be performed
+2
+
+
+[1] Removing Min
+Element Removed - -659
+Interval Heap after removing min element
+[Displaying Interval Heap in Level Order]
+    	 N0( -562,  90056 )
+	N1( 0,  56 )      N2( 9,  557 )
+N3( 0,  4 )  
+
+Q - > N1 , N2 , N3 
+
+N1, N2 , N3
+
+
+
+
+[2] Removing Min
+Element Removed - -562
+Interval Heap after removing min element
+[Displaying Interval Heap in Level Order]
+( 0,  90056 )
+( 0,  56 )      ( 9,  557 )
+( XXX ,  4 )
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Enter no. of times removeMax is to be performed
+4
+
+
+[1] Removing Max
+Element Removed - 90056
+Interval Heap after removing max element
+[Displaying Interval Heap in Level Order]
+( 0,  557 )
+( 0,  56 )      ( 4,  9 )
+
+
+[2] Removing Max
+Element Removed - 557
+Interval Heap after removing max element
+[Displaying Interval Heap in Level Order]
+( 0,  56 )
+( 0,  9 )      ( 4,   XXX  )
+
+
+[3] Removing Max
+Element Removed - 56
+Interval Heap after removing max element
+[Displaying Interval Heap in Level Order]
+( 0,  9 )
+( 0,  4 )
+
+
+[4] Removing Max
+Element Removed - 9
+Interval Heap after removing max element
+[Displaying Interval Heap in Level Order]
+( 0,  4 )
+( 0,   XXX  )
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+Enter Element to be Inserted
+-9999
+
+Interval Heap after insertion
+[Displaying Interval Heap in Level Order]
+( -9999,  4 )
+( 0,  0 )
+
+----------------------------------------------------------------------------------------------------------------------------------

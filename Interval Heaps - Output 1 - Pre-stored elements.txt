@@ -1,0 +1,169 @@
+
+Interval Heaps
+
+How do you want to proceed?
+
+1. Pre-stored static list of elements
+
+2. User Interactive Console
+
+
+Enter your choice(1|2)
+1
+
+
+Static list of elements
+
+1 2 2955 6565 256 454 945 5454 92955 96565 9256 9454 95453 9545499 2 0 89
+
+
+Creating Heap
+
+Processing element - 1
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,   XXX  )
+
+Processing element - 2
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  2 )
+
+Processing element - 2955
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  2955 )
+( XXX ,  2 )
+
+Processing element - 6565
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  6565 )
+( 2,  2955 )
+
+Processing element - 256
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  6565 )
+( 2,  2955 )      ( 256,   XXX  )
+
+Processing element - 454
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  6565 )
+( 2,  2955 )      ( 256,  454 )
+
+Processing element - 945
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  6565 )
+( 2,  2955 )      ( 256,  454 )
+( 945,   XXX  )
+
+Processing element - 5454
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  6565 )
+( 2,  5454 )      ( 256,  454 )
+( 945,  2955 )
+
+Processing element - 92955
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  92955 )
+( 2,  6565 )      ( 256,  454 )
+( 945,  2955 )      ( XXX ,  5454 )
+
+Processing element - 96565
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  96565 )
+( 2,  92955 )      ( 256,  454 )
+( 945,  2955 )      ( 5454,  6565 )
+
+Processing element - 9256
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  96565 )
+( 2,  92955 )      ( 256,  9256 )
+( 945,  2955 )      ( 5454,  6565 )      ( XXX ,  454 )
+
+Processing element - 9454
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  96565 )
+( 2,  92955 )      ( 256,  9454 )
+( 945,  2955 )      ( 5454,  6565 )      ( 454,  9256 )
+
+Processing element - 95453
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  96565 )
+( 2,  92955 )      ( 256,  95453 )
+( 945,  2955 )      ( 5454,  6565 )      ( 454,  9256 )      ( XXX ,  9454 )
+
+Processing element - 9545499
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  9545499 )
+( 2,  92955 )      ( 256,  96565 )
+( 945,  2955 )      ( 5454,  6565 )      ( 454,  9256 )      ( 9454,  95453 )
+
+Processing element - 2
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 1,  9545499 )
+( 2,  92955 )      ( 256,  96565 )
+( 2,  2955 )      ( 5454,  6565 )      ( 454,  9256 )      ( 9454,  95453 )
+( 945,   XXX  )
+
+Processing element - 0
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 0,  9545499 )
+( 1,  92955 )      ( 256,  96565 )
+( 2,  2955 )      ( 5454,  6565 )      ( 454,  9256 )      ( 9454,  95453 )
+( 2,  945 )
+
+Processing element - 89
+Interval Heap:
+[Displaying Interval Heap in Level Order]
+( 0,  9545499 )
+( 1,  92955 )      ( 256,  96565 )
+( 2,  2955 )      ( 5454,  6565 )      ( 454,  9256 )      ( 9454,  95453 )
+( 2,  945 )      ( 89,   XXX  )
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+Removing Min
+Element Removed - 0
+Interval Heap after removing min element
+[Displaying Interval Heap in Level Order]
+( 1,  9545499 )
+( 2,  92955 )      ( 256,  96565 )
+( 2,  2955 )      ( 5454,  6565 )      ( 454,  9256 )      ( 9454,  95453 )
+( 89,  945 )
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+Removing Max
+Element Removed - 9545499
+Interval Heap after removing max element
+[Displaying Interval Heap in Level Order]
+( 1,  96565 )
+( 2,  92955 )      ( 256,  95453 )
+( 2,  2955 )      ( 5454,  6565 )      ( 454,  9256 )      ( 945,  9454 )
+( 89,   XXX  )
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+Inserting Element : 50
+Interval Heap after insertion
+[Displaying Interval Heap in Level Order]
+( 1,  96565 )
+( 2,  92955 )      ( 256,  95453 )
+( 2,  2955 )      ( 5454,  6565 )      ( 454,  9256 )      ( 945,  9454 )
+( 50,  89 )
